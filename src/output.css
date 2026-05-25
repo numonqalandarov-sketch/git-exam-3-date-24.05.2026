@@ -239,6 +239,9 @@
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
   }
+  .max-w-\[100px\] {
+    max-width: 100px;
+  }
   .max-w-\[1200\] {
     max-width: 1200;
   }
