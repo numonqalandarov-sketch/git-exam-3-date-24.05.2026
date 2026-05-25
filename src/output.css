@@ -21,6 +21,7 @@
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
+    --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -192,6 +193,9 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-95 {
+    width: calc(var(--spacing) * 95);
+  }
   .w-full {
     width: 100%;
   }
@@ -234,6 +238,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -255,12 +262,18 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-\[\#0A84FF\] {
     background-color: #0A84FF;
@@ -333,6 +346,11 @@
       width: 100%;
     }
   }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -346,6 +364,11 @@
   .lg\:w-3\/4 {
     @media (width >= 64rem) {
       width: calc(3 / 4 * 100%);
+    }
+  }
+  .lg\:w-160 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 160);
     }
   }
   .lg\:w-\[40\%\] {
