@@ -209,6 +209,9 @@
   .table {
     display: table;
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-170 {
     height: calc(var(--spacing) * 170);
   }
